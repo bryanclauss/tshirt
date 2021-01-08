@@ -1,0 +1,127 @@
+# Set the GPIO mode its either BCM or 
+GPIO_Mode: BCM
+# Set the pin number associated with each Flap.
+PinNumbers:
+  1-Flap: 4
+  2-Flap: 5
+  3-Flap: 6
+  4-Flap: 18
+  5-Flap: 17
+# The PIN number the button is wired to
+PinButton: 7 
+# This is the KEYBOARD button you want to trigger the program 
+KeyboardTriggerButton: enter
+
+# Set the name of the program you want to run when the button is pressed
+# this must match one of the names you see below ThisIsTheNameOfTheProgram: <--
+# the name of the program is everything before the :
+# I am going to use the first one, BasicShirtFold1
+ProgramNameToRun: BasicShirtFold1
+
+
+
+# Folding programs can have as many steps and as many programs as you want
+# I created two for you, they are identical. The names of the programs
+# are BasicShirtFold1 and BasicShirtFold2 
+
+# BasicShirtFold1 program defined here
+BasicShirtFold1:
+  Step1:
+      PinName: 1-Flap
+      PinState: OFF
+      Delay: 200
+  Step2:
+      PinName: 2-Flap
+      PinState: ON
+      Delay: 800 
+  Step3:
+      PinName: 2-Flap
+      PinState: OFF
+      Delay: 800
+  Step4:
+      PinName: 3-Flap
+      PinState: ON
+      Delay: 800
+  Step5:
+      PinName: 3-Flap
+      PinState: OFF
+      Delay: 800
+  Step6:
+      PinName: 4-Flap
+      PinState: ON
+      Delay: 800
+  Step7:
+      PinName: 4-Flap
+      PinState: OFF
+      Delay: 800
+  Step8:
+      PinName: 3-Flap
+      PinState: ON
+      Delay: 800
+  Step9:
+      PinName: 3-Flap
+      PinState: OFF
+      Delay: 800
+  Step10:
+      PinName: 5-Flap
+      PinState: ON
+      Delay: 800
+  Step11:
+      PinName: 5-Flap
+      PinState: OFF
+      Delay: 800
+  Step12:
+      PinName: 1-Flap
+      PinState: ON
+      Delay: 0
+
+# BasicShirtFold1 program defined here
+BasicShirtFold2:
+  Step1:
+      PinName: 1-Flap
+      PinState: OFF
+      Delay: 0
+  Step2:
+      PinName: 2-Flap
+      PinState: ON
+      Delay: 200
+  Step3:
+      PinName: 2-Flap
+      PinState: OFF
+      Delay: 0
+  Step4:
+      PinName: 3-Flap
+      PinState: ON
+      Delay: 200
+  Step5:
+      PinName: 3-Flap
+      PinState: OFF
+      Delay: 0
+  Step6:
+      PinName: 4-Flap
+      PinState: ON
+      Delay: 200
+  Step7:
+      PinName: 4-Flap
+      PinState: OFF
+      Delay: 0
+  Step8:
+      PinName: 3-Flap
+      PinState: ON
+      Delay: 200
+  Step9:
+      PinName: 3-Flap
+      PinState: OFF
+      Delay: 0
+  Step10:
+      PinName: 5-Flap
+      PinState: ON
+      Delay: 200
+  Step11:
+      PinName: 5-Flap
+      PinState: OFF
+      Delay: 0
+  Step12:
+      PinName: 1-Flap
+      PinState: ON
+      Delay: 0
